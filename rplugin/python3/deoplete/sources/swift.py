@@ -110,7 +110,7 @@ class SourceKitten(object):
 
         default = shutil.which('sourcekitten', mode=os.X_OK)
         if default is None:
-            raise SourceKittenNotFound(default)
+            raise SourceKittenNotFound('sourcekitten')
 
         return default
 
